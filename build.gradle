@@ -1,0 +1,56 @@
+group 'com.suchomsky'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencies {
+    compile 'com.github.sushiomsky:PersistentPreferences:1.0a'
+
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    //compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
+
+    // https://mvnrepository.com/artifact/org.beykery/neuroph
+    //compile group: 'org.beykery', name: 'neuroph', version: '2.92'
+
+    // https://mvnrepository.com/artifact/commons-cli/commons-cli
+    //compile group: 'commons-cli', name: 'commons-cli', version: '1.3.1'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    //compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.7.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.json/json
+    compile group: 'org.json', name: 'json', version: '20160810'
+
+    // https://mvnrepository.com/artifact/org.jdbi/jdbi
+//    compile group: 'org.jdbi', name: 'jdbi', version: '2.10.1'
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.16.1'
+
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    //compile group: 'com.h2database', name: 'h2', version: '1.4.193'
+
+    // https://mvnrepository.com/artifact/org.skife.config/config-magic
+    //compile group: 'org.skife.config', name: 'config-magic', version: '0.17'
+
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    //compile group: 'org.jsoup', name: 'jsoup', version: '1.10.2'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    //compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+    //compile group: 'com.jcraft', name: 'jsch', version: '0.1.54'
+    
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
